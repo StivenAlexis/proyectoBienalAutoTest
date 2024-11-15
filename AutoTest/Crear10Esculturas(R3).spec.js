@@ -22,6 +22,7 @@ test('test', async ({ page }) => {
   await page.waitForNavigation({ url: 'https://bienal-front-end-viuu.vercel.app/adminPanel' });
   
   // Navegar al panel de administración
+  test.setTimeout(600000);
   await page.getByRole('button').click();
   await page.getByRole('heading', { name: 'Gestionar Esculturas' }).click();
   

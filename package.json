@@ -12,6 +12,8 @@
     "@types/node": "^22.9.0"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "pixelmatch": "^6.0.0",
     "proyectobienalautotest": "file:"
   }
 }
