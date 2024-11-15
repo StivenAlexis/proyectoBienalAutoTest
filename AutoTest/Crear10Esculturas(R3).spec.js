@@ -33,7 +33,7 @@ test('test', async ({ page }) => {
   await page.getByLabel('Eliminar escultura').first().click();
   
   // Crear 20 nuevas esculturas
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 10; i++) {
     await page.getByRole('button', { name: 'Crear Escultura' }).click();
     await page.getByLabel('Nombre *').fill(`Escultura ${i}`);
     await page.getByLabel('Descripción de la Temática *').fill(`Descripción de la escultura ${i}`);
