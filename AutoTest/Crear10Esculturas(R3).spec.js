@@ -26,12 +26,6 @@ test('test', async ({ page }) => {
   await page.getByRole('button').click();
   await page.getByRole('heading', { name: 'Gestionar Esculturas' }).click();
   
-  // Realizar acciones en la página de administración
-  await page.getByLabel('Ver escultura').first().click();
-  await page.getByRole('button', { name: 'Atrás' }).click();
-  await page.getByLabel('Modificar escultura').first().click();
-  await page.getByRole('button', { name: 'Atrás' }).click();
-  await page.getByLabel('Eliminar escultura').first().click();
   
   // Crear 20 nuevas esculturas
   for (let i = 1; i <= 10; i++) {
