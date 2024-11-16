@@ -10,7 +10,7 @@ test('test', async ({ page }) => {
   await page1.getByLabel('Username or email address').press('Tab');
   await page1.getByLabel('Password').fill('PedroPedro55');
   await page1.getByRole('button', { name: 'Sign in', exact: true }).click();
-  await page.waitForTimeout(6000);
+  test.setTimeout(6000);
   await page.goto('https://bienal-front-end-viuu.vercel.app/adminPanel');
   await page.getByRole('heading', { name: 'Gestionar Eventos' }).click();
   await page.getByLabel('Ver evento').first().click();
