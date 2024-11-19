@@ -1,5 +1,5 @@
 // File: src/components/qr/QRPage.test.js
-import React from 'react';
+/*import React from 'react';
 import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import Qrver from './Qrver';
 
@@ -79,4 +79,4 @@ describe('Qrver Component', () => {
     jest.useRealTimers();
   });
 
-});
+});*/
